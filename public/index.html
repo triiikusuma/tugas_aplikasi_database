@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Siswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Input Absensi Siswa</h1>
+    <form id="absensiForm">
+        <input type="text" id="nama" placeholder="Nama" required>
+        <input type="text" id="kelas" placeholder="Kelas" required>
+        <select id="status" required>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+            <option value="Izin">Izin</option>
+        </select>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <h2>Daftar Absensi Siswa</h2>
+    <ul id="absensiList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
